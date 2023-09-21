@@ -33,7 +33,7 @@ body {
 
 #card-section {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 
@@ -45,6 +45,10 @@ body {
     border-radius: .6rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 2rem;
-background-repeat: no-repeat;
-background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card_selected{
+    border: 2rem solid #efc745;
 }
