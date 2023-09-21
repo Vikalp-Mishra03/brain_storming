@@ -1,35 +1,35 @@
 let cardsArray = [
     {
-        'name': 'Adidas',
-        'img': 'img/brand1.jpg'
+        'name': 'CSS',
+        'img': 'img/css.png',
     },
     {
-        'name': 'Nike',
-        'img': 'img/brand2.jpg'
+        'name': 'HTML',
+        'img': 'img/html.png',
     },
     {
-        'name': 'Gucci',
-        'img': 'img/brand3.jpg'
+        'name': 'jQuery',
+        'img': 'img/jquery.png',
     },
     {
-        'name': 'Merrell',
-        'img': 'img/brand4.jpg'
+        'name': 'JS',
+        'img': 'img/javascript.png',
     },
     {
-        'name': 'Puma',
-        'img': 'img/brand5.jpg'
+        'name': 'Node',
+        'img': 'img/node.png',
     },
     {
-        'name': 'Red Chief',
-        'img': 'img/red.pnh'
-    },
-]
+        'name': 'Python',
+        'img': 'img/python.png',
+    }
+];
+const parentDiv = document.querySelector("#card-section");
 
-const parentDiv = document.querySelector("#card-section")
-for(let i = 0; i < cardsArray.length; i++){
-    const childDiv = document.createElement('div')
-    childDiv.classList.add('card')
-    childDiv.dataset.name = cardsArray[i].name
-    childDiv.style.backgroundImage = `url(${cardsArray[i].name})`;
-    parentDiv.appendChild(childDiv)
+for (let i = 0; i < cardsArray.length; i++) {
+    const childDiv = document.createElement('div');
+    childDiv.classList.add('card');
+    childDiv.dataset.name = cardsArray[i].name;
+    childDiv.style.backgroundImage = `url('${cardsArray[i].img}')`;     
+    parentDiv.appendChild(childDiv);
 }
